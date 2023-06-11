@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import mounir from './assets/mounir.jpg'
+import ClassCounter from './components/ClassCounter';
 
 class App extends React.Component {
  
@@ -18,6 +19,7 @@ class App extends React.Component {
   var handleShow =()=>{this.setState({show:!this.state.show})};
   return (
     <div className="App">
+      <ClassCounter />
        <h1>Hello {this.state.fullName}!?</h1>
         <button onClick={handleShow} >ClickMe</button>
         <p>{this.state.show? 
